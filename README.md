@@ -1,7 +1,7 @@
 # Ukraine Financial Aid - Support Tracker 
 ## An Overview of Military, Financial and Humanitarian Aid to Ukraine from both EU and non-EU Government 
 
-Latest update - 1st quarter of 2024
+Last update - 1st quarter of 2024
 
 ## 1) Introduction
 ### Which countries help Ukraine and how?
