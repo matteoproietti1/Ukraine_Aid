@@ -70,5 +70,5 @@ From this analysis, the data available allow us to gather some more interest fin
 
 <details>
   <summary>View the Dashboard</summary>
-  <img src="https://github.com/matteoproietti1/AirBnB_Analysis/assets/169601063/b8d20c94-ddaa-426e-a6f6-f0bf353e02d9" alt="Milan Visualization Overview" width="1000">
-  <p>The Buenos Aires - Venezia neighborhood has the highest number of listings, with 1,475 in total. Andrea is the top host, owning 41 of these listings. The average price for an entire home in this neighborhood is 192 euros per night (25 euros more than the average price of a staying in Milan, which is 167 euro).
+  <img src="https://github.com/matteoproietti1/Ukraine_Aid/assets/169601063/ff1ebf13-ccc2-415d-854d-911ce33f9e2c" alt="Ukraine AID - Overview" width="1000">
+  <p>As we can see, the top right chart refers to the distribution of aid throughout the years, with the very high peak in 06/2023 (2024 is still running so it cannot be fully taken into account). For more comprehensive insight, please refer to the calculation and interactive add-ons.
