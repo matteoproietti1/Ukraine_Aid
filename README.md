@@ -5,7 +5,9 @@ Last update - 1st quarter of 2024
 
 ## 1) Introduction
 ### Which countries help Ukraine and how?
-The Scope of Work of this project is to conduct an exploratory data analysis on the official IFW KIEL dataset for the Russo-Ukrainian War, regarding the military, financial and humanitarian support by governments to Ukraine since February 2022. By analyzing various faces of the dataset, including how the differents aid are spread, the spread-overtime and more insights, we seek to analyze how the 41 countries (42 with the EU) contributed. Due to lack of reliability, this analysis does not consider private donations or transfers by international organizations (Red Cross, Unicef et similar).
+The Scope of Work of this project is to conduct an exploratory data analysis on the official IFW KIEL dataset for the Russo-Ukrainian War, regarding the military, financial and humanitarian support by governments to Ukraine since February 2022. By analyzing various faces of the dataset, including how the differents aid are spread, the spread-overtime and more insights, we seek to analyze how the 41 countries (42 with the EU) contributed. 
+
+NOTE: Note: Allocations are specific aid packages have been delivered or earmarked for delivery to Ukraine. Due to lack of reliability, this analysis does not consider private donations or transfers by international organizations (Red Cross, Unicef et similar).
 
 ### Data Sources
 The first part of the analysis regarded the collection of data. For this, many differents tables have been gathered from a single .csv file available at "INSERT LINK OF DATASET", and many outliers were not taken in consideration (mainly to avoid a too-in-depth analysis that would have caused confusion).
@@ -21,7 +23,7 @@ During the cleaning and preparation phase, following tasks were performed:
 4) Handling missing and null values to avoid imprecise analysis
 
 ### Tools
-- Excel - Initial data cleansing, addressing formatting inconsistencies and improvment of data quality.Spacing and spreading of table.
+- Excel - Initial data cleansing, addressing formatting inconsistencies and improvment of data quality. Spacing and spreading of table.
 - BigQuery Studio SQL - Data Cleaning and Analysis
 - Tableau - Data Visualization for Dashboard
   
@@ -31,8 +33,24 @@ During the cleaning and preparation phase, following tasks were performed:
 1) Who are the Top 10 Donors?
 <details>
   <summary>See the findings</summary>
+Bottom right chart focuses on top 10 donors by total allocations (each country split by category). They are shown as it's displayed here below:
 
+| Donor                    | Total (B €) | Financial (B €) | Humanitarian (B €) | Military (B €)     |
+|--------------------------|-------------|-----------------|--------------------| -------------------|
+| EU                       | 77.11       | 74.82           | 2.29               | 0                  |
+| United States            | 70.38       | 24.61           | 24.61              | 43.24              |
+| Germany                  | 23.06       | 1.41            | 3.05               | 18.61              |
+| United Kingdom           | 15.89       | 6.08            | 0.59               | 9.22               |
+| Denmark                  | 8.77        | 0.13            | 0.24               | 8.40               |
+| Japan                    | 7.81        | 5.69            | 2.05               | 0                  |
+| Canada                   | 7.73        | 4.56            | 0.38               | 2.79               |
+| Norway                   | 7.49        | 3.39            | 0.35               | 3.75               |
+| France                   | 6.81        | 0.80            | 0.36               | 5.65               |
+| Netherlands              | 6.21        | 1.06            | 0.72               | 4.44               |
 
+*Range of Data available from 1/24/2022 to 2/29/2024*
+
+As we can see, EU is the top donor "Country". Both EU and Japan donated a total of 0B for military aid (which is pretty understandable, especially from EU). Highest amount comes from US, standing out as 43.24B.
   
 </details>
 
@@ -53,6 +71,20 @@ During the cleaning and preparation phase, following tasks were performed:
 4) What country donated the most, considering the donation as a share of their GDP?
 
 <details><summary>See the findings</summary>
+We can see, in the top 10 donor, a dominancy of Nothern-Europe region, and so:
+  
+| Country    | Share of GDP (%) |
+|------------|------------------|
+| Estonia    | 1.45             |
+| Denmark    | 1.29             |
+| Lithuania  | 1.14             |
+| Latvia     | 1.07             |
+| Finland    | 0.69             |
+| Poland     | 0.64             |
+| Slovakia   | 0.59             |
+| Sweden     | 0.51             |
+
+*Leading donors in terms of share of their GDP.*
 
 
 </details>
@@ -61,7 +93,6 @@ During the cleaning and preparation phase, following tasks were performed:
 
 <details><summary>See the findings</summary>
 The total committments are 259.14B.
-
 Left to be allocated is 89.49B. Of those, the European Union has the biggest share of 57.75% (49.50B). Following: Germany, Uk and then...
 </details>
 
